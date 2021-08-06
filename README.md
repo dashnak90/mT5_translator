@@ -1,5 +1,5 @@
 # mT5 Translator
-In this project I built Translator using Transfer Learning approach. I used Hugging Face [mT5](https://huggingface.co/transformers/model_doc/mt5.html) Base model (multilingual pretrained text-to-text transformer model) and fine-tuned it on 4 downstream tasks (English-German, German-English, Russian-English, English-Russian) using data from
+In this project I built Deep Learning Translator using Transfer Learning approach. I used Hugging Face [mT5](https://huggingface.co/transformers/model_doc/mt5.html) Base model (multilingual pretrained text-to-text transformer model) and fine-tuned it on 4 downstream tasks (English-German, German-English, Russian-English, English-Russian) using data from
 [The Tatoeba Translation Challenge](https://github.com/Helsinki-NLP/Tatoeba-Challenge). 
 <br/>
 The model was trained in Google Colab using PyTorch.
