@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) ;
+
+
+}
+.content{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+footer{
+  margin-top: 50px;
+  width: 100%;
+  color:rgb(128, 128, 128)
+}
+
+h1 {
+    color:rgb(10, 0, 97)
+}
+h3 {
+  margin-bottom: 10px;
+  color:rgb(0, 100, 25);
+ 
+}
+h4 {
+    color:rgb(10, 0, 97)
+}
+img.left {
+    margin-left: 150px;
+}
+img.center {
+  margin-left: 350px;
+}
+img.right 
+{
+ text-align:right;
+
+ margin-left: 1000px;
+}
+  
+img.pics {
+  margin-bottom: 50px;
+}
+.form-floating{
+  color: rgb(158, 158, 158)
+}
+
+.col1 {
+  text-align: right;
+}
+.instructions {
+    color:rgb(94, 94, 94)
+}
+
+#button {
+    background-color: rgb(220, 0, 240);
+    border-color: black;
+    margin-top: 50px;
+}
+.rating{
+    margin-top: 20px;
+    position: relative;
+  }
+.textd{
+  font-size: 13px;
+}
+
+
+a:hover {
+    color:rgb(10, 0, 97)
+}
+.nav-link {
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+  };
+
+
+
+.navbar-brand {
+            color:rgb(0, 0, 0);
+            font-weight: 900;
+            
+        }
+
+
+
+
+  

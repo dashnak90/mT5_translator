@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{%block title%}mT5-Translator{% endblock%}
+
+
+
+{%block content%}
+
+<div class='header'>
+  <h1>{{ title }}</h1>
+
+  <p>Translator built with mT5: A massively multilingual pre-trained text-to-text transformer</p>
+</div>
+
+
+<img class="left" src ='/static/image3.gif' width='850' >
+
+
+
+<div class='content'>
+
+
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <h4 id="German">German-English Translator</h4>
+
+
+<div class='instructions'>
+<!-- prompting the user to rate actual movie titles- passing python variables to HTML via Jinja tags -->
+  <p>Please specify desired languages and enter your text</p>
+  </div>
+  <br/>
+  <form action="/translate" method="POST">
+    <div class="row g-3">   
+      <div class="col">
+        <div class="col1">
+
+        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off" name='ger.eng'>
+<label class="btn btn-outline-primary" for="btn-check-outlined">German</label><br><br/>
+        <input type="checkbox" class="btn-check" id="btn-check-2-outlined" autocomplete="off" name='eng.ger'>
+        <label class="btn btn-outline-primary" for="btn-check-2-outlined">English</label><br/>
+        </div>
+      </div>
+      <div class="col-md-9">
+     
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name='text'></textarea>
+          <label for="floatingTextarea2">Enter your text here:</label>
+        </div>
+        
+      </div>
+      <div class="col">
+
+        <input type="checkbox" class="btn-check" id="btn-check-3-outlined" autocomplete="off" name='to_german'>
+        <label class="btn btn-outline-primary" for="btn-check-3-outlined">German</label><br><br/>
+        <input type="checkbox" class="btn-check" id="btn-check-4-outlined" autocomplete="off" name='to_english'>
+        <label class="btn btn-outline-primary" for="btn-check-4-outlined">English</label><br/>
+
+        
+      </div>
+    </div>
+  <br/><br/>
+    <button type="submit" class="btn btn-success btn-lg">Translate</button>
+  </form>
+
+
+</div>
+</div>
+
+<img class="center" src ='/static/google2.png' width='600' >
+
+<div class='content'>
+
+
+  <h4 id="Russian">Russian-English Translator</h4>
+  
+  <div class='instructions'>
+    <!-- prompting the user to rate actual movie titles- passing python variables to HTML via Jinja tags -->
+      <p>Please specify desired languages and enter your text</p>
+   </div>
+   <br/>
+     
+   <form action="/translate" method="POST">
+    <div class="row g-3">   
+      <div class="col">
+        <div class="col1">
+
+        <input type="checkbox" class="btn-check" id="btn-check-5-outlined" autocomplete="off" name='rus.eng'>
+<label class="btn btn-outline-primary" for="btn-check-5-outlined">Russian</label><br><br/>
+        <input type="checkbox" class="btn-check" id="btn-check-6-outlined" autocomplete="off" name='eng.rus'>
+        <label class="btn btn-outline-primary" for="btn-check-6-outlined">English</label><br/>
+        </div>
+      </div>
+      <div class="col-md-9">
+     
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name='text'></textarea>
+          <label for="floatingTextarea2">Enter your text here:</label>
+        </div>
+        
+      </div>
+      <div class="col">
+
+        <input type="checkbox" class="btn-check" id="btn-check-7-outlined" autocomplete="off" name='to_russian'>
+        <label class="btn btn-outline-primary" for="btn-check-7-outlined">Russian</label><br><br/>
+        <input type="checkbox" class="btn-check" id="btn-check-8-outlined" autocomplete="off" name='to_english'>
+        <label class="btn btn-outline-primary" for="btn-check-8-outlined">English</label><br/>
+
+        
+      </div>
+    </div>
+  <br/><br/>
+    <button type="submit" class="btn btn-success btn-lg">Translate</button>
+  </form>
+   
+  <br/>    
+  
+<img class="right" src ='/static/google.png' width='150' >
+
+</div>
+
+
+{%endblock%}

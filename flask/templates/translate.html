@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Translation{% endblock %}
+
+
+{%block content%}
+<div class='content'>
+  <h1> mT5 model generated the following translation:</h1>
+<br/>
+  <div class="row g-3">   
+    <div class="col-md-9">
+        <h3>Your sentence:</h3> {{text}}
+        <h3>Our translation:</h3> {{trans}}
+      </div>
+    
+    <div class="col">
+
+        <img src ='/static/unnamed.png' width='250' >
+    </div>
+
+  </div>
+
+   
+        <a class="btn btn-success" href="/" role="button">Go back to main page</a>
+ 
+ 
+</div>
+{%endblock%}
