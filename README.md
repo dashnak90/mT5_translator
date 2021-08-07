@@ -14,3 +14,6 @@ Using the fine-tuned model, I created a simple Flask webapp and hosted it on Goo
 * Colab
 * Flask 
 * Bootstrap
+
+***BLEU score*** (compated to TATOEBA score)
+![](results.png)
